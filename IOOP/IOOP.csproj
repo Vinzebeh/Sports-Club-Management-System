@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14C20049-6C67-4575-8AAE-F90AE272D07E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Assignment</RootNamespace>
+    <AssemblyName>Assignment</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccManagement.Designer.cs">
+      <DependentUpon>AccManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCompetition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCompetition.designer.cs">
+      <DependentUpon>AddCompetition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adduser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adduser.Designer.cs">
+      <DependentUpon>Adduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Schedule.designer.cs">
+      <DependentUpon>Add_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignStud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignStud.designer.cs">
+      <DependentUpon>AssignStud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="coach.cs" />
+    <Compile Include="Coach_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coach_Main.designer.cs">
+      <DependentUpon>Coach_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="competition.cs" />
+    <Compile Include="deleteCompetition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteCompetition.designer.cs">
+      <DependentUpon>deleteCompetition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Schedule.designer.cs">
+      <DependentUpon>Delete_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit.designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editComp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editComp.designer.cs">
+      <DependentUpon>editComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editprofile.Designer.cs">
+      <DependentUpon>Editprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Schedule.designer.cs">
+      <DependentUpon>Edit_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager.cs" />
+    <Compile Include="ManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerHome.designer.cs">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rec.designer.cs">
+      <DependentUpon>rec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recommendation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recommendation.designer.cs">
+      <DependentUpon>Recommendation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="record.cs" />
+    <Compile Include="Record_Performances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Record_Performances.designer.cs">
+      <DependentUpon>Record_Performances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update.cs" />
+    <Compile Include="Update_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Profile.designer.cs">
+      <DependentUpon>Update_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users.cs" />
+    <Compile Include="viewAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewAssign.designer.cs">
+      <DependentUpon>viewAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewcomp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewcomp.Designer.cs">
+      <DependentUpon>viewcomp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCompetition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCompetition.designer.cs">
+      <DependentUpon>ViewCompetition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewincome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewincome.Designer.cs">
+      <DependentUpon>viewincome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewmember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewmember.Designer.cs">
+      <DependentUpon>Viewmember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSuggestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSuggestion.Designer.cs">
+      <DependentUpon>ViewSuggestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Payment.designer.cs">
+      <DependentUpon>View_Payment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccManagement.resx">
+      <DependentUpon>AccManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCompetition.resx">
+      <DependentUpon>AddCompetition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adduser.resx">
+      <DependentUpon>Adduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Schedule.resx">
+      <DependentUpon>Add_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignStud.resx">
+      <DependentUpon>AssignStud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coach_Main.resx">
+      <DependentUpon>Coach_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteCompetition.resx">
+      <DependentUpon>deleteCompetition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Schedule.resx">
+      <DependentUpon>Delete_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit.resx">
+      <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editComp.resx">
+      <DependentUpon>editComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editprofile.resx">
+      <DependentUpon>Editprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Schedule.resx">
+      <DependentUpon>Edit_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerHome.resx">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="rec.resx">
+      <DependentUpon>rec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recommendation.resx">
+      <DependentUpon>Recommendation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Record_Performances.resx">
+      <DependentUpon>Record_Performances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Profile.resx">
+      <DependentUpon>Update_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewAssign.resx">
+      <DependentUpon>viewAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewcomp.resx">
+      <DependentUpon>viewcomp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCompetition.resx">
+      <DependentUpon>ViewCompetition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewincome.resx">
+      <DependentUpon>viewincome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewmember.resx">
+      <DependentUpon>Viewmember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSuggestion.resx">
+      <DependentUpon>ViewSuggestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Payment.resx">
+      <DependentUpon>View_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IOOP.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IOOP_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>IOOP.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
